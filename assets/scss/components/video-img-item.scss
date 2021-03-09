@@ -1,6 +1,6 @@
 .video-img-item{
     display: grid;
-    grid-template-columns: 32% 35% 29%;
+    grid-template-columns: 32% 35% 1fr;
     gap: 20px;
     @media screen and (max-width: $tablet){
         grid-template-columns: repeat(2, 1fr);

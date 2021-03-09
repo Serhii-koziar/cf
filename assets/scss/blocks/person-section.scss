@@ -76,6 +76,7 @@
         padding: 0;
         border-bottom: 3px solid $white;
         position: relative;
+        overflow-y: hidden;
         @media screen and (max-width: $tabletLarge){
             display: flex;
             flex-direction: column-reverse;
@@ -100,10 +101,9 @@
         }
         .person-section__img{
             position: absolute;
-            height: 94%;
             left: 0;
-            bottom: 0;
-            width: 49vw;
+            bottom: -10%;
+            width: 45vw;
             @media screen and (max-width: $tabletLarge){
                 position: relative;
                 left: auto;
@@ -116,7 +116,6 @@
                 width: 100%;
             }
             img{
-                object-fit: contain;
                 object-position: left bottom;
             }
         }
