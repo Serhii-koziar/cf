@@ -1,0 +1,124 @@
+.person-section{
+    padding: 3.5% 0;
+    background-color: #e3d0d0;
+    @media screen and (max-width: $tablet){
+        padding: 50px 0;
+    }
+    @media screen and (max-width: $tabletSmall){
+        padding: 35px 0;
+    }
+    // .person-section__wrapper
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $tablet){
+            flex-direction: column;
+        }
+    }
+    // .person-section__text
+    &__text{
+        width: 54%;
+        @media screen and (max-width: $tablet){
+            width: 100%;
+        }
+        h2{
+            color: $blackBlue;
+            @include adaptiveProperty('font-size', 51, 26);
+            @include adaptiveProperty('line-height', 39, 32);
+        }
+        h4{
+            margin: 10px 0 30px 0;
+            color: $blackBlue;
+            @include adaptiveProperty('font-size', 25, 17);
+            @include adaptiveProperty('line-height', 39, 26);
+            @media screen and (max-width: $tabletSmall){
+                margin-bottom: 20px;
+            }
+            span{
+                display: block;
+                width: 100%;
+            }
+        }
+        p{
+            margin-bottom: 40px;
+            color: #302c2c;
+            font-weight: 300;
+            @media screen and (max-width: $tablet){
+                margin-bottom: 25px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+        }
+    }
+    // .person-section__img
+    &__img{
+        width: 38%;
+        @media screen and (max-width: $tabletLarge){
+            width: 43%;
+        }
+        @media screen and (max-width: $tablet){
+            width: 60%;
+            margin: 0 auto 30px auto;
+        }
+        @media screen and (max-width: $mobile){
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // .person-section--img-outside
+    &--img-outside{
+        padding: 0;
+        border-bottom: 3px solid $white;
+        position: relative;
+        @media screen and (max-width: $tabletLarge){
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 50px;
+        }
+        @media screen and (max-width: $tablet){
+            padding-top: 35px;
+        }
+        .person-section__text{
+            width: 43%;
+            margin-left: auto;
+            padding: 5% 0;
+            p{
+                @media screen and (max-width: $tabletLarge){
+                    margin-bottom: 25px;
+                }
+            }
+            @media screen and (max-width: $tabletLarge){
+                padding: 0;
+                width: 100%;
+            }
+        }
+        .person-section__img{
+            position: absolute;
+            height: 94%;
+            left: 0;
+            bottom: 0;
+            width: 49vw;
+            @media screen and (max-width: $tabletLarge){
+                position: relative;
+                left: auto;
+                margin: 0 auto;
+            }
+            @media screen and (max-width: $tabletSmall){
+                width: 70%;
+            }
+            @media screen and (max-width: 425px){
+                width: 100%;
+            }
+            img{
+                object-fit: contain;
+                object-position: left bottom;
+            }
+        }
+    }
+}

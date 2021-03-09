@@ -1,0 +1,35 @@
+.one-row-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #efefef;
+    padding: 15% 10% 20% 10%;
+    box-sizing: border-box;
+    width: 100%;
+
+    @media screen and (max-width: $mobile){
+        padding: 20px 15px 40px 15px;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+    // .one-row-item__img
+    &__img{
+        max-width: 124px;
+        width: 100%;
+        margin-bottom: 20px;
+        @media screen and (max-width: $mobile){
+            max-width: 71px;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    h5{
+        text-align: center;
+        color: $blackBlue;
+
+    }
+}

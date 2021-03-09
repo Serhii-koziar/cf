@@ -1,0 +1,26 @@
+.video-item{
+    // .video-item__img
+    &__img {
+        position: relative;
+        height: 0;
+        padding-bottom: 60%;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    p{
+        @include adaptiveProperty('font-size', 24, 17);
+        @include adaptiveProperty('line-height', 37, 26);
+        max-width: 775px;
+        width: 100%;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        @media screen and (max-width: $tablet){
+            margin-top: 15px;
+        }
+    }
+}

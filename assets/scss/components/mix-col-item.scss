@@ -1,0 +1,40 @@
+.mix-col-item{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 3;
+    @media screen and (max-width: $tabletLarge){
+        grid-column: span 1;
+    }
+    &:last-child,
+    &:nth-child(8n - 1),
+    &:nth-child(8n - 2){
+        grid-column: span 5;
+        @media screen and (max-width: $tabletLarge){
+            grid-column: span 1;
+        }
+    }
+    p{
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        color: #7b7f80;
+        text-align: center;
+        margin-top: 25px;
+    }
+    // .mix-col-item__img
+    &__img{
+        width: 100%;
+        height: 0;
+        position: relative;
+        padding-bottom: 63%;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

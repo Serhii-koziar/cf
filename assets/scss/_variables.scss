@@ -1,0 +1,35 @@
+// Sizing
+$container: 1908; // container width
+$deskLarge: 1599px;
+$deskLargeP1: $deskLarge / 1px + 1px;
+$desktop: 1440px;
+$desktopP1: $desktop / 1px + 1px;
+$tabletLarge: 1280px;
+$tabletLargeP1: $tabletLarge / 1px + 1px;
+$tablet: 1024px; // @media (max-width: $tablet) --> 1024px and smaller
+$tabletP1: $tablet / 1px + 1px; // @media (min-width: $tabletP1) --> 1025px and bigger
+$tabletSmall: 767px;
+$tabletSmallP1: $tabletSmall / 1px + 1px;
+$mobile: 575px;
+$mobileP1: $mobile / 1px + 1px;
+$mobileSmall: 370px;
+$mobileSmallP1: $mobileSmall / 1px + 1px;
+
+// container
+$containerPaddingS: 2rem;
+$containerPaddingM: 2.4rem;
+$containerPadding: 6.4rem;
+
+// Colors
+
+// base
+$white: #ffffff;
+$black: #000000;
+$transparent: rgba(0, 0, 0, .0);
+$green: #1a9c2a;
+$blackBlue:#004d69;
+$red: #e3d0d0;
+
+// Fonts
+$primary-font: 'Roboto', sans-serif;
+

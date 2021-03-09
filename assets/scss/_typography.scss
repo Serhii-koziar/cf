@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+  font-family: $primary-font;
+  color: $black;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5{
+  font-weight: 700;
+}
+
+h1, .h1{
+  @include adaptiveProperty('font-size', 61, 28);
+  @include adaptiveProperty('line-height', 72, 33);
+}
+h2, .h2{
+  @include adaptiveProperty('font-size', 51, 28);
+  @include adaptiveProperty('line-height', 72, 40);
+}
+h3,.h3{
+  @include adaptiveProperty('font-size', 31, 18);
+  @include adaptiveProperty('line-height', 72, 40);
+}
+h4, .h4 {
+  @include adaptiveProperty('font-size', 23, 17);
+  @include adaptiveProperty('line-height', 32, 32);
+}
+h5, .h5 {
+  @include adaptiveProperty('font-size', 21, 13);
+  @include adaptiveProperty('line-height', 32, 19);
+}
+p, .p{
+  @include adaptiveProperty('font-size', 20, 17);
+  @include adaptiveProperty('line-height', 37, 26 );
+}

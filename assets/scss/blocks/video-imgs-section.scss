@@ -1,0 +1,25 @@
+.video-imgs-section {
+    padding: 5% 0;
+    @media screen and (max-width: $tabletSmall){
+        padding: 40px 0;
+    }
+    // .video-imgs-section__head
+    &__head{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto 80px auto;
+        @media screen and (max-width: $tabletSmall){
+            margin-bottom: 30px;
+        }
+        h2{
+            text-align: center;
+            color: $blackBlue;
+        }
+    }
+    // .video-imgs-section__body
+    &__body{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}

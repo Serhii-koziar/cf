@@ -1,0 +1,46 @@
+.field {
+    input,
+    textarea {
+        outline: none;
+
+        width: 100%;
+        padding: 10px 16px;
+        //border: 1px solid $fieldOutline ;
+        box-sizing: border-box;
+        height: 55px;
+        border-radius: 3px;
+        background-color: #efefef;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        font-size: 1.4rem;
+        line-height: 1.45;
+        @media screen and (max-width: $mobile){
+            height: 40px;
+        }
+        //color: $textDark1;
+        &::placeholder{
+            @include adaptiveProperty('font-size', 19, 13);
+            @include adaptiveProperty('line-height', 23, 16);
+            color: #818181;
+            font-weight: 300;
+        }
+    }
+
+    input {
+    }
+
+    textarea {
+        resize: none;
+        overflow-y: auto;
+        height: 120px;
+        @media screen and (max-width: $mobile){
+            height: 80px;
+        }
+    }
+}
+
+
+

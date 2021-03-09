@@ -1,0 +1,31 @@
+.number-item-section{
+    padding: 3.5% 0 5% 0;
+    @media screen and (max-width: $tabletSmall){
+        padding: 30px 0 40px 0;
+    }
+    // .number-item-section__body
+    &__body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px;
+        counter-reset: img;
+        @media screen and (max-width: $tablet){
+            gap:20px
+        }
+        @media screen and (max-width: $tabletSmall){
+            grid-template-columns: 100%;
+        }
+        @media screen and (max-width: $mobile) {
+            gap: 35px;
+        }
+    }
+    // .number-item-section__head
+    &__head{
+        color: $blackBlue;
+        text-align: center;
+        margin-bottom: 50px;
+        @media screen and (max-width: $tabletSmall){
+            margin-bottom: 20px;
+        }
+    }
+}

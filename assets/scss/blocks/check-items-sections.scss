@@ -1,0 +1,91 @@
+.check-items-sections{
+    padding: 4% 0 3% 0;
+    @media screen and (max-width: $tablet){
+        padding: 35px 0;
+    }
+    // .check-items-sections__head
+    &__head{
+        width: 100%;
+        text-align: center;
+        margin:0 auto 60px auto;
+        @media screen and (max-width: $tabletSmall){
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: $blackBlue;
+            text-align: center;
+        }
+        p{
+            color: #7a7a7a;
+            margin-top: 15px;
+        }
+    }
+    // .check-items-sections__inner
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        @media screen and (max-width: $tablet){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+        @media screen and (max-width: 425px){
+            grid-template-columns: 1fr;
+        }
+    }
+    // .check-items-sections__body
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn{
+        display: inline-flex;
+        margin: 70px auto 0 auto;
+        @media screen and (max-width: $tabletSmall){
+            margin-top: 40px;
+        }
+    }
+    // .check-items-sections--two-row
+    &--two-row{
+        padding: 5% 0;
+        @media screen and (max-width: $tablet){
+            padding: 40px 0;
+        }
+        .check-items-sections__inner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            @media screen and (max-width: $tablet){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (max-width: $mobile){
+                grid-template-columns: 100%;
+            }
+        }
+        .check-item{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            @media screen and (max-width: $tablet){
+                margin-bottom: 0;
+                grid-column: 1 span;
+                width: 100%;
+            }
+        }
+        .check-item__text{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            p{
+                margin-top: 30px;
+                max-width: 380px;
+                @media screen and (max-width: $mobile){
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

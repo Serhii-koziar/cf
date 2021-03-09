@@ -1,0 +1,28 @@
+.cla-section{
+    padding: 7% 0;
+    background-color: $blackBlue;
+    @media screen and (max-width: $tabletSmall) {
+        padding: 100px 0;
+    }
+    // .cla-section__content
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2{
+            @include adaptiveProperty('font-size', 38, 26);
+            @include adaptiveProperty('line-height', 45, 36);
+            color: $white;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #91b2be;
+            @include adaptiveProperty('font-size', 21, 21);
+            @include adaptiveProperty('line-height', 30, 30);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+    }
+}

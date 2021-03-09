@@ -1,0 +1,24 @@
+@function pxToRem ($value) {
+    @return #{$value/10px + rem}
+}
+
+@function remToPx ($value) {
+    @return #{$value*10/1rem + px}
+}
+
+@function remToNum ($value) {
+    @return #{$value*10/1rem}
+}
+
+@function pxToNum ($value) {
+    @return #{$value/1px}
+}
+
+@function numToRem ($value) {
+    @return #{$value/10 + rem}
+}
+
+@function numToPx ($value) {
+    @return #{$value + px}
+}
+
