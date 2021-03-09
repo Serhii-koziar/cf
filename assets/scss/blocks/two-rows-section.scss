@@ -6,14 +6,15 @@
     }
     // .two-rows-section__inner
     &__inner{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         max-width: 1600px ;
         margin: 0 auto;
         gap: 50px 0;
         width: 100%;
         @media screen and (max-width: $tablet){
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
         }
         @media screen and (max-width: $tabletSmall){

@@ -19,12 +19,13 @@
         object-fit: contain;
         z-index: -1;
     }
-    p{
+    span{
         text-align: center;
         max-width: 115px;
         width: 100%;
         font-weight: 700;
         color: $blackBlue;
+        @extend .p;
         @media screen and (max-width: $tabletLarge){
             font-size: 1.7rem;
         }

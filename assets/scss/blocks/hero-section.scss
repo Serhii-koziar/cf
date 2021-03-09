@@ -50,6 +50,12 @@
         position: absolute;
         bottom: 70px;
         left: 50%;
+        @media screen and (max-width: 1700px){
+            left: 40%;
+        }
+        @media screen and (max-width: $desktop){
+            left: 35%;
+        }
         @media screen and (max-width: $tabletLarge){
             left: auto;
             right: 5%;
@@ -145,9 +151,9 @@
             margin-top: 0;
         }
         li{
-            width: 30px;
-            height: 30px;
-            margin-right: 3px;
+            width: 23px;
+            height: 23px;
+            margin-right: 10px;
             @media screen and (max-width: $mobile){
                 height: 15px;
                 width: 15px;

@@ -8,6 +8,7 @@ export function initSlider() {
     spaceBetween: 50,
     pagination: {
       el: '.slider-section__pagination',
+      clickable: true,
     },
     breakpoints: {
       // when window width is >= 320px
@@ -22,7 +23,10 @@ export function initSlider() {
       // when window width is >= 640px
       1280: {
         slidesPerView: 3,
-        spaceBetween: 15,
+      },
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 50,
       },
     }
   });
