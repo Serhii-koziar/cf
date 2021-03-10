@@ -55,6 +55,7 @@
         @media screen and (max-width: $tablet){
             padding-left: 0;
             grid-column: span 2;
+            margin-top: 10px;
         }
         @media screen and (max-width: $mobile){
             grid-column: span 1;
@@ -63,9 +64,6 @@
             @include adaptiveProperty('font-size', 51, 26);
             @include adaptiveProperty('line-height', 72, 40);
             color: $blackBlue;
-            @media screen and (max-width: $mobile){
-                margin-top: 10px;
-            }
         }
         p{
             color: #4a4a4a;

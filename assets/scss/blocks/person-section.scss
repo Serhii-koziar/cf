@@ -27,7 +27,7 @@
             @include adaptiveProperty('line-height', 39, 32);
         }
         h4{
-            margin: 10px 0 30px 0;
+            margin:30px 0;
             color: $blackBlue;
             @include adaptiveProperty('font-size', 25, 17);
             @include adaptiveProperty('line-height', 39, 26);
@@ -89,6 +89,11 @@
             width: 43%;
             margin-left: auto;
             padding: 5% 0;
+            min-height: 1010px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             p{
                 @media screen and (max-width: $tabletLarge){
                     margin-bottom: 25px;
@@ -97,13 +102,22 @@
             @media screen and (max-width: $tabletLarge){
                 padding: 0;
                 width: 100%;
+                min-height: 0;
             }
         }
         .person-section__img{
             position: absolute;
             left: 0;
             bottom: -10%;
-            width: 45vw;
+            width: 49vw;
+            @media screen and (max-width: 1680px){
+                width: 55vw;
+                left: -5%;
+            }
+            @media screen and (max-width: $desktop){
+                width: 60vw;
+                left: -10%;
+            }
             @media screen and (max-width: $tabletLarge){
                 position: relative;
                 left: auto;
@@ -112,7 +126,7 @@
             @media screen and (max-width: $tabletSmall){
                 width: 70%;
             }
-            @media screen and (max-width: 425px){
+            @media screen and (max-width: $mobile){
                 width: 100%;
             }
             img{

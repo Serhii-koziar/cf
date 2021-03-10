@@ -33,8 +33,6 @@ export default class ModalWindowBase {
   }
 
   openModal(currentModalId) {
-    console.log('open')
-    console.log(this.$modal.dataset.curentTypeOfModal)
     this.$modal.dataset.curentTypeOfModal = this.type
     this.$modal.classList.add(this.constants.MODAL_ACTIVE_CLASS)
     this.$modal.querySelector(`#${currentModalId}`)
@@ -44,7 +42,6 @@ export default class ModalWindowBase {
   }
 
   closeModal(event) {
-    console.log('close')
     this.$modal.dataset.curentTypeOfModal = ''
     this.$modal.classList.remove(this.constants.MODAL_ACTIVE_CLASS)
     this.$modal.querySelector(`.${this.constants.MODAL_ITEM_ACTIVE_CLASS}`)

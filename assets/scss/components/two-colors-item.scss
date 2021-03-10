@@ -31,16 +31,16 @@
         padding: 5.5% 10.5%;
         box-sizing: border-box;
         @media screen and (max-width: $mobile){
-            padding: 25px 40px;
+            padding: 25px 20px;
         }
         h3 {
-            @include adaptiveProperty('font-size', 28, 15);
+            @include adaptiveProperty('font-size', 28, 17);
             @include adaptiveProperty('line-height', 36, 18);
             color: $white;
         }
 
         p {
-            @include adaptiveProperty('font-size', 21, 14);
+            @include adaptiveProperty('font-size', 21, 16);
             @include adaptiveProperty('line-height', 30, 18);
             color: $white;
             @media screen and (max-width: $mobile){

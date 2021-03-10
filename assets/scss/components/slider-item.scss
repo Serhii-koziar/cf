@@ -11,6 +11,8 @@
         height: 76px;
         width: 76px;
         border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
         @media screen and (max-width: $mobile){
             height: 56px;
             width: 56px;
@@ -25,8 +27,9 @@
     &__title{
         width: 80%;
         margin-left: auto;
-        @media screen and (max-width: $deskLarge){
-            width: 70%;
+        @media screen and (max-width: 1680px){
+            width: auto;
+            margin-left: 15px;
         }
 
         @media screen and (max-width: $tabletSmall){
@@ -66,7 +69,7 @@
             @include adaptiveProperty('font-size', 17, 17);
             @include adaptiveProperty('line-height', 30, 22);
             font-weight: 300;
-            @media screen and (max-width: $deskLarge){
+            @media screen and (max-width: 1680px){
                 width: 100%;
 
             }
