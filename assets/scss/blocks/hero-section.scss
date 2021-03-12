@@ -46,12 +46,43 @@
             }
         }
     }
+    // .hero-section__before
+    &__before{
+        width: 15vw;
+        left: 33%;
+        transform: rotate(-3deg);
+        bottom: 50px;
+        position: absolute;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+        @media screen and (max-width: 1680px){
+            left: 50%;
+            transform: translateX(-50%) rotate(-3deg);
+            bottom: 90px;
+        }
+        @media screen and (max-width: $desktop){
+            left: 43%;
+        }
+        @media screen and (max-width: $tabletLarge){
+            transform: translateX(0) rotate(-3deg);
+            left: auto;
+            right: 5%;
+            max-width: 200px;
+            width: 100%;
+        }
+        @media screen and (max-width: $tabletSmall){
+            display: none;
+        }
+    }
     .info-square{
         position: absolute;
         bottom: 70px;
         left: 50%;
-        @media screen and (max-width: 1700px){
-            left: 40%;
+        @media screen and (max-width: 1680px){
+            left: 42%;
+            bottom: 30px;
         }
         @media screen and (max-width: $desktop){
             left: 35%;
@@ -68,7 +99,7 @@
     }
     // .hero-section__content
     &__content{
-        width: 31%;
+        width: 30%;
         @media screen and (max-width: $tabletLarge){
             width: 100%;
         }
@@ -90,6 +121,25 @@
                 height: 200px;
             }
         }
+        h2{
+            @include adaptiveProperty('font-size', 27, 18);
+            @include adaptiveProperty('line-height', 41, 24);
+            color: $blackBlue;
+            font-weight: 400;
+            @media screen and (max-width: $tabletLarge){
+                text-align: center ;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    // .hero-section__info-wr
+    &__info-wr{
+        @media screen and (max-width: $tabletLarge){
+            margin-top:40px;
+        }
+        @media screen and (max-width: $mobile){
+            margin-top: 10px;
+        }
     }
     // .hero-section__info
     &__info {
@@ -97,7 +147,7 @@
         margin-top: 40px;
         @media screen and (max-width: $tabletLarge){
             align-items: center;
-            margin-bottom: 20px;
+            margin:0 0 20px 0;
             justify-content: center;
         }
         @media screen and (max-width: $mobile){
