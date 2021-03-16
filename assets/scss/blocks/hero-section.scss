@@ -73,7 +73,10 @@
             width: 100%;
         }
         @media screen and (max-width: $tabletSmall){
-            display: none;
+            left: 5%;
+            right: auto;
+            max-width: 120px;
+            bottom: -20px;
         }
     }
     .info-square{
@@ -99,12 +102,12 @@
     }
     // .hero-section__content
     &__content{
-        width: 30%;
+        width: 31%;
         @media screen and (max-width: $tabletLarge){
             width: 100%;
         }
         h1{
-            @include adaptiveProperty('font-size', 49, 16);
+            @include adaptiveProperty('font-size', 49, 18);
             @include adaptiveProperty('line-height', 62, 20);
             color: $blackBlue;
             @media screen and (max-width: $tabletLarge){
@@ -125,7 +128,10 @@
             @include adaptiveProperty('font-size', 27, 18);
             @include adaptiveProperty('line-height', 41, 24);
             color: $blackBlue;
-            font-weight: 400;
+            font-weight: 700;
+            &.regular-font{
+                font-weight: 400;
+            }
             @media screen and (max-width: $tabletLarge){
                 text-align: center ;
                 margin-bottom: 20px;
@@ -138,7 +144,7 @@
             margin-top:40px;
         }
         @media screen and (max-width: $mobile){
-            margin-top: 10px;
+            margin-top: 30px;
         }
     }
     // .hero-section__info
@@ -164,6 +170,7 @@
             margin-left: 15px;
         }
         h3{
+            font-weight: 500;
             @include adaptiveProperty('font-size', 22, 12);
             @include adaptiveProperty('line-height', 33, 19);
         }

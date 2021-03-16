@@ -7,10 +7,12 @@
     h3{
         color: $blackBlue;
         font-weight: 700;
+        margin: 20px 0;
         text-align: center;
+        line-height: 1.5;
         @media screen and (max-width: $mobile) {
             font-size: 3.1rem;
-            line-height: 7.2rem;
+            line-height: 3.7rem;
         }
     }
     p{
@@ -31,12 +33,15 @@
         width: 100%;
         position: relative;
         img{
+            display: block;
+            margin: 0 auto;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            height: 100px;
         }
         span{
             position: absolute;
-            right: 0;
+            right: -5px;
             top: 7px;
             width: 37px;
             height: 37px;
@@ -52,5 +57,4 @@
             }
         }
     }
-
 }

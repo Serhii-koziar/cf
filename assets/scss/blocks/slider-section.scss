@@ -86,4 +86,11 @@
             }
         }
     }
+
+    .swiper-wrapper{
+        align-items: stretch;
+        .slider-item{
+            height: auto;
+        }
+    }
 }

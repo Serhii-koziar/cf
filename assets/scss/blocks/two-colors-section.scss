@@ -14,9 +14,10 @@
         }
         h4{
             @include adaptiveProperty('font-size', 25, 25);
-            @include adaptiveProperty('line-height', 72, 32);
+            //@include adaptiveProperty('line-height', 72, 32);
             color: $blackBlue;
-            font-weight: 400;
+            font-weight: 700;
+            line-height: 1;
             @media screen and (max-width: $mobile){
                 margin-top: 10px;
             }

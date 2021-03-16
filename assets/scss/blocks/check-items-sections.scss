@@ -25,6 +25,18 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         width: 100%;
+        &.check-items-el-3{
+            grid-template-columns: repeat(auto-fit, minmax(250px, 370px));
+            grid-gap: 90px;
+            justify-content: center;
+            @media screen and (max-width: $tablet){
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            @media screen and (max-width: 425px){
+                grid-template-columns: 1fr;
+            }
+        }
         @media screen and (max-width: $tablet){
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;

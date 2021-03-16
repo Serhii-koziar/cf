@@ -34,9 +34,11 @@
             padding: 25px 20px;
         }
         h3 {
+            letter-spacing: 1px;
             @include adaptiveProperty('font-size', 28, 17);
             @include adaptiveProperty('line-height', 36, 18);
             color: $white;
+            margin-bottom: 15px;
         }
 
         p {
