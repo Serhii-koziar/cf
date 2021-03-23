@@ -1,5 +1,8 @@
 .check-items-sections{
     padding: 4% 0 3% 0;
+    &.grey-bg{
+        background-color: #efefefa3;
+    }
     @media screen and (max-width: $tablet){
         padding: 35px 0;
     }
