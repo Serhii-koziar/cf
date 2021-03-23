@@ -107,7 +107,7 @@
         }
         .person-section__img{
             position: absolute;
-            left: 0;
+            left: -7%;
             bottom: -10%;
             width: 49vw;
             @media screen and (max-width: 1680px){
@@ -130,10 +130,10 @@
                 width: 100%;
                 position: relative;
                 top: -20px;
-                left: -50px;
+                //left: -50px;
             }
             img{
-                object-position: left bottom;
+                object-position: right bottom;
             }
         }
     }
